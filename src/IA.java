@@ -16,7 +16,7 @@ public class IA {
     /** change this boolean to accelerate the game */
     private static final boolean speedy = false;
 
-    enum Character {WARRIOR,PALADIN,DRUID,SORCERER}
+    enum Character {WARRIOR,PALADIN,DRUID,SORCERER,TROLL,ELF}
 
     private static final String playerKey = UUID.randomUUID().toString();
     private enum Mode {CREATE,JOIN}
