@@ -17,12 +17,13 @@ class Game {
     /** Data of the current player */
     private Player me;
 
-    /**>Data of the foe of the current player */
+    /** Data of the foe of the current player */
     private Player foe;
 
     enum GameStatus {WAITING,PLAYING,FINISHED}
 
     class Player {
+
         /** Heal points remaining */
         Long healthPoints;
 
@@ -70,6 +71,7 @@ class Game {
     }
 
     class Action {
+
         /** Name of the action (to be used by the players to play) */
         String name;
 
@@ -92,7 +94,6 @@ class Game {
         }
     }
 
-   // GETTER
 
     public String getToken() {
         return token;

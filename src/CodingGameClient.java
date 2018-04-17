@@ -18,8 +18,9 @@ import static okhttp3.RequestBody.create;
 class CodingGameClient {
 
     /** url of the coding game server */
-     private static final String API_URL = "https://coding-game.swat-sii.fr/api";
-//    private static final String API_URL = "http://localhost:8080";
+//    private static final String API_URL = "https://coding-game.swat-sii.fr/api";
+    private static final String API_URL = "http://localhost/api/";
+//    private static final String API_URL = "http://192.168.0.2/api/";
 
     /** change this boolean to show json response in console */
     private static final boolean ENABLE_JSON_LOG = false;
