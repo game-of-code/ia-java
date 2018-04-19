@@ -1,3 +1,6 @@
+import static java.lang.String.format;
+import static okhttp3.RequestBody.create;
+
 import java.io.IOException;
 
 import org.json.JSONException;
@@ -11,9 +14,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-
-import static java.lang.String.format;
-import static okhttp3.RequestBody.create;
 
 class CodingGameClient {
 
