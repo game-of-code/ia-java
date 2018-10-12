@@ -30,8 +30,14 @@ class Game {
         /** Armor remaining */
         Long armor;
 
+        /** isBehindShield */
+        Boolean isBehindShield;
+
         /** Character chosen by the player */
         CharacterCharacteristic character;
+
+        /** History of actions */
+        List<History> history;
 
         public Long getHealthPoints() {
             return healthPoints;
@@ -43,6 +49,17 @@ class Game {
 
         public CharacterCharacteristic getCharacter() {
             return character;
+        }
+
+        public Boolean getIsBehindShield() {
+            return isBehindShield;
+        }
+
+        /**
+         * @return the history
+         */
+        public List<History> getHistory() {
+            return history;
         }
     }
 
@@ -91,6 +108,34 @@ class Game {
 
         public Double getCoolDown() {
             return coolDown;
+        }
+    }
+
+    class History {
+
+        Action action;
+        Integer age;
+        Integer id;
+
+        /**
+         * @return the action
+         */
+        public Action getAction() {
+            return action;
+        }
+
+        /**
+         * @return the age
+         */
+        public Integer getAge() {
+            return age;
+        }
+        
+        /**
+         * @return the id
+         */
+        public Integer getId() {
+            return id;
         }
     }
 
