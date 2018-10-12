@@ -3,6 +3,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+
 public class IA {
 
     // data from main arguments
@@ -100,16 +101,15 @@ public class IA {
             System.out.println("Waiting count down during " + game.getCountDown() + "ms...");
             Thread.sleep(game.getCountDown());
 
-            // ******************************************
-            // IMPLEMENT YOUR AI HERE
-            // ******************************************
-
-            // The following AI just randomly alternate with the 4 possible actions
-
+            
             Random random = new Random();
-
+            
             while(game.getStatus() != Game.GameStatus.FINISHED) {
-
+                // ******************************************
+                // IMPLEMENT YOUR AI HERE
+                // ******************************************
+    
+                // The following AI just randomly alternate with the 4 possible actions
                 switch (random.nextInt(4)) {
                     case 0:
                         CodingGameClient.playAndWaitCoolDown(game.getToken(), playerKey, "HIT");
